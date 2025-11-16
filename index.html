@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TailwindCSS Review Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-8 h-14 flex items-center justify-between">
+      <!-- Left links -->
+      <nav class="flex items-center space-x-6 text-sm">
+        <a href="#" class="relative text-purple-600 font-semibold">
+          Link
+          <span class="absolute -bottom-3 left-0 w-full h-0.5 bg-purple-600"></span>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-gray-900">Link</a>
+        <a href="#" class="text-gray-500 hover:text-gray-900">Link</a>
+      </nav>
+
+      <!-- Center logo -->
+      <div class="flex-1 flex justify-center">
+        <div class="h-8 w-8 rounded-full border-2 border-purple-500 flex items-center justify-center">
+          <span class="text-xs font-semibold text-purple-600">C</span>
+        </div>
+      </div>
+
+      <!-- Right: search + login -->
+      <div class="flex items-center space-x-4 text-sm">
+        <div class="hidden sm:flex items-center bg-gray-100 rounded-full px-3 py-1">
+          <span class="text-xs text-gray-400 mr-2">🔍</span>
+          <input
+            type="text"
+            placeholder="Search..."
+            class="bg-transparent text-xs outline-none placeholder:text-gray-400"
+          />
+        </div>
+        <button class="px-4 py-1.5 rounded-md bg-purple-600 text-white font-semibold text-xs hover:bg-purple-700">
+          Log in
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gray-200">
+    <div class="max-w-5xl mx-auto px-4 lg:px-8 py-20 text-center">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+        Quisquam necessita<br />
+        vel <span class="text-purple-600">laborum</span><br />
+        <span class="text-purple-600">doloribus</span>delectus
+      </h1>
+      <p class="max-w-xl mx-auto text-sm font-semibold text-gray-600 mb-8">
+        Cupiditate minima voluptate temporibus quia? <br /> Architecto beatae esse ab amet vero eaque explicabo!
+      </p>
+
+      <div class="flex items-center justify-center space-x-4">
+        <button class="px-6 py-2 rounded-md bg-purple-600 text-white text-sm font-semibold hover:bg-purple-700">
+          Get started
+        </button>
+        <button class="text-sm text-gray-700 hover:text-gray-900">
+          Learn more
+        </button>
+      </div>
+    </div>
+  </section>
+
+ <!-- REVIEWS SECTION -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-4 lg:px-8 py-16">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-12">
+      What our customers are saying about us
+    </h2>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- CARD 1 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 relative overflow-visible pt-8 px-8 pb-20">
+        <!-- Üst tırnak -->
+        <div class="text-purple-500 text-3xl mb-4">❝</div>
+
+        <!-- Metin -->
+        <p class="text-sm text-gray-900 text text-center mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+        </p>
+
+        <!-- Sağ alttaki küçük tırnak -->
+        <div class="absolute right-8 bottom-24 text-purple-500 text-xl">
+          ❞
+        </div>
+
+        <!-- Avatar (mor bant ile içerik arasına oturan daire) -->
+        <div
+          class="absolute left-1/2 -translate-x-1/2 bottom-16 h-12 w-12 rounded-full bg-gray-700 border-4 border-white flex items-center justify-center shadow-md">
+          <span class="text-xs text-white">◎</span>
+        </div>
+
+        <!-- Mor alt bant -->
+        <div class="absolute left-0 right-0 bottom-0 bg-purple-600 rounded-b-xl text-center text-white py-4">
+          <p class="text-sm font-semibold leading-tight">Distinctio Animi</p>
+          <p class="text-[10px] uppercase tracking-wide text-purple-200">
+            Aliquam Illum
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 relative overflow-visible pt-8 px-8 pb-20">
+        <div class="text-purple-500 text-3xl mb-4">❝</div>
+        <p class="text-sm text-gray-900 text text-center mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+        </p>
+        <div class="absolute right-8 bottom-24 text-purple-500 text-xl">
+          ❞
+        </div>
+        <div
+          class="absolute left-1/2 -translate-x-1/2 bottom-16 h-12 w-12 rounded-full bg-gray-700 border-4 border-white flex items-center justify-center shadow-md">
+          <span class="text-xs text-white">◎</span>
+        </div>
+        <div class="absolute left-0 right-0 bottom-0 bg-purple-600 rounded-b-xl text-center text-white py-4">
+          <p class="text-sm font-semibold leading-tight">Distinctio Animi</p>
+          <p class="text-[10px] uppercase tracking-wide text-purple-200">
+            Aliquam Illum
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 relative overflow-visible pt-8 px-8 pb-20">
+        <div class="text-purple-500 text-3xl mb-4">❝</div>
+        <p class="text-sm text-gray-900 text text-center mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+        </p>
+        <div class="absolute right-8 bottom-24 text-purple-500 text-xl">
+          ❞
+        </div>
+        <div
+          class="absolute left-1/2 -translate-x-1/2 bottom-16 h-12 w-12 rounded-full bg-gray-700 border-4 border-white flex items-center justify-center shadow-md">
+          <span class="text-xs text-white">◎</span>
+        </div>
+        <div class="absolute left-0 right-0 bottom-0 bg-purple-600 rounded-b-xl text-center text-white py-4">
+          <p class="text-sm font-semibold leading-tight">Distinctio Animi</p>
+          <p class="text-[10px] uppercase tracking-wide text-purple-200">
+            Aliquam Illum
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 relative overflow-visible pt-8 px-8 pb-20">
+        <div class="text-purple-500 text-3xl mb-4">❝</div>
+        <p class="text-sm text-gray-900 text text-center mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+        </p>
+        <div class="absolute right-8 bottom-24 text-purple-500 text-xl">
+          ❞
+        </div>
+        <div
+          class="absolute left-1/2 -translate-x-1/2 bottom-16 h-12 w-12 rounded-full bg-gray-700 border-4 border-white flex items-center justify-center shadow-md">
+          <span class="text-xs text-white">◎</span>
+        </div>
+        <div class="absolute left-0 right-0 bottom-0 bg-purple-600 rounded-b-xl text-center text-white py-4">
+          <p class="text-sm font-semibold leading-tight">Distinctio Animi</p>
+          <p class="text-[10px] uppercase tracking-wide text-purple-200">
+            Aliquam Illum
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="bg-gray-200 py-16">
+    <div class="max-w-2xl mx-auto px-4">
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 px-8 py-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-8">
+          Contact us
+        </h2>
+
+        <form class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-1">Name</label>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-1">Email</label>
+            <input
+              type="email"
+              placeholder="Your email"
+              class="w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-1">Message</label>
+            <textarea
+              rows="4"
+              placeholder="Message..."
+              class="w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full mt-4 py-2.5 rounded-md bg-purple-600 text-white text-sm font-semibold hover:bg-purple-700">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="max-w-6xl mx-auto px-4 lg:px-8 mt-10 flex flex-col md:flex-row items-center justify-between text-sm text-gray-700">
+      <nav class="flex space-x-6 mb-4 md:mb-0">
+        <a href="#" class="hover:text-gray-900">Shop</a>
+        <a href="#" class="hover:text-gray-900">About</a>
+        <a href="#" class="hover:text-gray-900">Blog</a>
+        <a href="#" class="hover:text-gray-900">Pricing</a>
+        <a href="#" class="hover:text-gray-900">Contact</a>
+      </nav>
+
+      <div class="flex space-x-4">
+        <!-- Basit ikon placeholder'ları -->
+        <div class="h-9 w-9 rounded-full bg-purple-600 flex items-center justify-center text-white text-lg">📷</div>
+        <div class="h-9 w-9 rounded-full bg-purple-600 flex items-center justify-center text-white text-lg">📌</div>
+        <div class="h-9 w-9 rounded-full bg-purple-600 flex items-center justify-center text-white text-lg">🐦</div>
+        <div class="h-9 w-9 rounded-full bg-purple-600 flex items-center justify-center text-white text-lg">f</div>
+        <div class="h-9 w-9 rounded-full bg-purple-600 flex items-center justify-center text-white text-lg">G</div>
+      </div>
+    </footer>
+  </section>
+
+</body>
+</html>
